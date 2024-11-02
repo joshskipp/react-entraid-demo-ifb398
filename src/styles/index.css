@@ -1,0 +1,222 @@
+:root {
+  --main-blue: #225578;
+  --main-orange: #c14213;
+  --hover-orange: #8e310e;
+
+  --white: #ffffff;
+}
+
+/* @font-face {
+  font-family: "Lato";
+  src: url(fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url(fonts/FiraSans-Regular.ttf);
+} */
+
+body {
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-underline-offset: 0.3em;
+  text-decoration: underline;
+  color: #022A50;
+}
+
+.container-fluid {
+  max-width: 86rem !important;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pre-header {
+  background-color: var(--main-blue);
+}
+
+.pre-header .flex-cont1 {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 100%;
+}
+
+.pre-header .flex-cont2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.pre-header .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pre-header .container-fluid a {
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 0;
+  color: var(--white);
+}
+
+.pre-header .container-fluid .btn {
+  float: right;
+  background: var(--main-orange);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pre-header .container-fluid .btn:hover {
+  float: right;
+  background: var(--hover-orange);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+header {
+  background: var(--white);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+  header .brand {
+      display: flex;
+      font-family: "Fira Sans", "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  header .brand span {
+      font-weight: 700;
+      font-size: 1.5rem;
+  }
+
+nav.main {
+  background: #F5F5F5;
+  border-bottom: 8px solid #c14213;
+}
+
+  nav.main ul {
+      list-style-type: none;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+  }
+
+  nav.main li {
+      display: block;
+      float: left;
+      padding-right: 3rem;
+      text-align: center;
+      font-weight: 600;
+  }
+
+.content{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.content .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+}
+
+.sidebar {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+@media (min-width: 992px) {
+.sidebar {
+  flex: 0 0 auto;
+  width: 25%;
+}
+}
+
+.innerContainer {
+  width: fit-content;
+}
+
+@media (min-width: 992px) {
+  .innerContainer {
+    flex: 0 0 auto;
+    width: 72%;
+    padding-left: 0.5rem;
+  }
+}
+
+.rounded-shaded {
+  background-color: #dfdfdf;
+  margin-top:0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+footer {
+  background: #225578;
+  margin-top: auto;    width: 100%;
+  color: #FFF;
+  font-size: 0.875rem;
+  padding: 2rem 0;
+  border-top: 0.25rem solid #c14213;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.loginButton {
+  float: right;
+  background: var(--main-orange);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+button.login {
+display: inline-block;
+margin: 0.5rem;
+outline: none;
+cursor: pointer;
+border: 1px solid transparent;
+text-align: left;
+vertical-align: top;
+min-width: 20rem;
+padding: calc(.875rem - 3px) 63px calc(.875rem - 3px) 15px;
+background-color: rgb(15, 98, 254);
+font-size: 14px;
+letter-spacing: 0.16px;
+min-height: 48px;
+line-height: 1.29;
+color: #fff;
+font-weight: 400;
+transition: background 70ms cubic-bezier(0,0,.38,.9),box-shadow 70ms cubic-bezier(0,0,.38,.9),border-color 70ms cubic-bezier(0,0,.38,.9),outline 70ms cubic-bezier(0,0,.38,.9);
+:hover {
+    background-color: #0353e9;
+}
+}
+
+.DropdownButton .pre-nav {
+  float: right;
+  background: var(--main-orange);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0rem;
+}
